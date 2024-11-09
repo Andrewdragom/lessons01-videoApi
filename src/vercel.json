@@ -3,10 +3,10 @@
   "version": 2,
   "name": "lesson01-videoApi",
   "builds": [
-    { "src": "app.ts", "use": "@vercel/node" }
+    { "src": "index.ts", "use": "@vercel/node" }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "app.ts" }
+    { "src": "/(.*)", "dest": "index.ts" }
 
   ]
 
