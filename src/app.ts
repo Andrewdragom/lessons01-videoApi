@@ -7,3 +7,7 @@ export const app = express()
 app.use(express.json())
 
 app.use(SETTINGS.PATH.VIDEOS, videosRouter);
+
+app.get('/', (req, res) => {
+    res.status(200).json({version: '1.0'})
+})
